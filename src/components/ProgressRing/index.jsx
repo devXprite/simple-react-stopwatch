@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import styles from './ProgressRing.module.scss';
 
 
-const ProgressRing = ({ count = 0, isPaused, children }) => {
+const ProgressRing = ({ count = 0, isPaused, children, setIsPaused }) => {
 
     const dotRef = useRef(null);
 
@@ -24,7 +24,7 @@ const ProgressRing = ({ count = 0, isPaused, children }) => {
     }, [count, isPaused]);
 
     return (
-        <div className={styles.ring}>
+        <div className={styles.ring} onClick={()=>{ setIsPaused(prev => !prev) }}>
             {children}
 
             {[...Array(count)].map((_, i) => (

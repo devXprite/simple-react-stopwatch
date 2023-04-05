@@ -21,6 +21,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--bg-200);
     color: var(--secondary-color);
+    position: relative;
+    user-select: none;
 }
 
 #root {

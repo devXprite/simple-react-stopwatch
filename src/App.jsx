@@ -63,7 +63,7 @@ function App() {
 
   return (
     <>
-      <ProgressRing count={time.sec} isPaused={isPaused} >
+      <ProgressRing count={time.sec} isPaused={isPaused} setIsPaused={setIsPaused} >
         <Timer time={time} isPaused={isPaused} />
       </ProgressRing>
 

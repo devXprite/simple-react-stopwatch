@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .btn_container {
-    margin-top: 20vh;
+    margin-top: 15vh;
     width: 90%;
     max-width: 30rem;
     display: flex;
@@ -37,7 +37,10 @@
             font-size: 1.25rem;
             border: 2px solid $primary-color;
             padding: 0.5rem 1rem;
+        }
 
+        &:last-of-type{
+            opacity: 0;
         }
     }
 }

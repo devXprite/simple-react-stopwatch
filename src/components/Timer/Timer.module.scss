@@ -7,12 +7,13 @@
     font-size: $timer-font-size;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
-    text-shadow: 0 0 6px;
+    text-shadow: 0 0 8px;
     width: 80%;
     margin: 0 auto;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 0.25fr 1fr 0.25fr 1fr;
+    pointer-events: none;
 
     @media screen and (max-width: 768px) {
         font-size: $timer-font-size-mobile;
