@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-100: hsl(211, 33%, 10%);
+    --bg-200: hsl(211, 33%, 15%);
+    --bh-300: hsl(211, 33%, 25%);
+    // --background: hsl(170, 100%, 5%);
+    --color-100: hsl(170, 100%, 45%);
+    --color-200: hsl(170, 100%, 100%);
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--bg-200);
+    color: var(--secondary-color);
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

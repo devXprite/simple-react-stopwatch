@@ -1,0 +1,61 @@
+@import '../../variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+.timer {
+    color: white;
+    font-size: $timer-font-size;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 6px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 1fr 0.25fr 1fr;
+
+    @media screen and (max-width: 768px) {
+        font-size: $timer-font-size-mobile;
+    }
+
+    .colon {
+        // margin: 0 0.5rem;
+        color: $primary-color;
+        font-weight: bold;
+
+        text-shadow:
+            0px 0px 2px rgba($primary-color, 0.75),
+            0px 0px 5px rgba($primary-color, 0.75),
+            0px 0px 10px rgba($primary-color, 0.75);
+
+        animation: blink 1s linear infinite;
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+    .time {
+
+        &.disabled {
+            // animation: blink 1s linear infinite;
+            opacity: 0.8;
+
+        }
+
+        &:last-of-type {
+            color: $primary-color;
+        }
+    }
+
+}

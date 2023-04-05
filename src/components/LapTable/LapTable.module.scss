@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.lapTable {
+    margin-top: 2rem;
+    border: 2px solid red;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    max-height: 25vh;
+    overflow: auto;
+
+    .lap {
+        color: white;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+
+        &>span {
+
+            &::after {
+                content: ':';
+                padding: 0.2rem;
+                color: $primary-color;
+            }
+
+            &:last-of-type {
+                color: $primary-color;
+
+                &::after{
+                    content: none;
+                }
+            }
+        }
+
+
+
+    }
+}
