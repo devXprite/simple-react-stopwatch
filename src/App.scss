@@ -3,6 +3,7 @@
 *,
 *::after,
 *::before {
+    -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,8 +12,7 @@
 :root {
     --bg-100: hsl(211, 33%, 10%);
     --bg-200: hsl(211, 33%, 15%);
-    --bh-300: hsl(211, 33%, 25%);
-    // --background: hsl(170, 100%, 5%);
+    --bg-300: hsl(211, 33%, 25%);
     --color-100: hsl(170, 100%, 45%);
     --color-200: hsl(170, 100%, 100%);
 }

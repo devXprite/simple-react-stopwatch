@@ -32,9 +32,7 @@ const updateTimer = (prev) => {
 function App() {
 
   const [isPaused, setIsPaused] = useState(false);
-
   const [laps, setLaps] = useState([]);
-
   const [time, setTime] = useState({
     hour: 0,
     min: 0,
